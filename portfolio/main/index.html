@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> </portfolio> </title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo_content">
+            <div class="logo">
+                <div class="logo_name">barkaw1</div>
+            </div>
+            <i class='bx bx-menu' id="btn" ></i>
+        </div>
+        <ul class="nav_list">
+            <li>
+                <a href="#">
+                    <i class='bx bx-search-alt'></i>
+                    <input type="text" placeholder="Buscar...">
+                </a>
+                <span class="tooltip">Search</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-grid-alt' ></i>
+                    <span class="links_name">Página Inicial</span>
+                </a>
+                <span class="tooltip">Página Inicial</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-user' ></i>
+                    <span class="links_name">Sobre Mim</span>
+                </a>
+                <span class="tooltip">Sobre Mim</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-code-alt' ></i>
+                    <span class="links_name">Projetos</span>
+                </a>
+                <span class="tooltip">Projetos</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-chat' ></i>
+                    <span class="links_name">Contatos</span>
+                </a>
+                <span class="tooltip">Contatos</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-heart' ></i>
+                    <span class="links_name">Habilidades</span>
+                </a>
+                <span class="tooltip">Habilidades</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-cog' ></i>
+                    <span class="links_name">Configurações</span>
+                </a>
+                <span class="tooltip">Configurações</span>
+            </li>
+        </ul>
+        <div class="profile_content">
+            <div class="profile">
+                <div class="profile_details">
+                    <a href="https://github.com/barkawi2405" target="_blank">
+                        <i class='bx bxl-github'></i>
+                    </a>
+                    <div class="name_job">
+                        <div class="name">Eduardo Augusto</div>
+                        <div class="job">Desenolvedor Web</div>
+                    </div>
+                </div>
+                <i class='bx bx-log-out' id="log_out"></i>
+            </div>
+        </div>
+    </div>
+    <div class="home_content">
+        <div class="text">Página Inicial</div>
+        <div class="text">Sober Mim</div>
+        <div class="text">Projetos</div>
+        <div class="text">Contatos</div>
+        <div class="text">Habilidades</div>
+        <div class="text">Configuações</div>
+    </div>
+
+    <script>
+        let btn = document.querySelector("#btn");
+        let sidebar = document.querySelector(".sidebar");
+        let searchBtn = document.querySelector("bx-search-alt");
+
+        btn.onclick = function() {
+            sidebar.classList.toggle("active");
+        }
+        searchBtn.onclick = function() {
+            sidebar.classList.toggle("active");
+        };
+    </script>
+
+</body>
+</html>
