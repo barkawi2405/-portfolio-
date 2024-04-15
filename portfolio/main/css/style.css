@@ -226,14 +226,43 @@ li a input::placeholder {
     width: calc(100%-78px);
     left: 78px;
     transition: all 0.5s ease;
+    display: block;
 }
 .home_content .text{
     font-size: 25px;
     font-weight: 500;
     color: #1E2019;
     margin: 12px;
+    background-color: #fff;
+}
+.dark-mode{
+    background-color: #1E2019;
+    color: #fff;
+}
+.dark-mode .text{
+    background-color: #1E2019;
+    color: #fff;
 }
 .sidebar.active ~ .home_content{
     width: calc(100%-240px);
     left: 240px;
 }
+button{
+    border: none;
+    font-style: none;
+    outline: none;
+    size: 25px;
+    font-size: 25px;
+    background-color: transparent;
+    color: #1E2019;
+}
+.dark-mode .icon-contract{
+    display: none;
+  }
+.icon-expand{
+    display: none;
+}
+.dark-mode .icon-expand{
+    display: block;
+    color: #fff;
+  }
