@@ -74,7 +74,7 @@
                     </a>
                     <div class="name_job">
                         <div class="name">Eduardo Augusto</div>
-                        <div class="job">Desenolvedor Web</div>
+                        <div class="job">Desenvolvedor Web</div>
                     </div>
                 </div>
                 <i class='bx bx-log-out' id="log_out"></i>
@@ -83,11 +83,15 @@
     </div>
     <div class="home_content">
         <div class="text">Página Inicial</div>
-        <div class="text">Sober Mim</div>
+        <div class="text">Sobre Mim</div>
         <div class="text">Projetos</div>
         <div class="text">Contatos</div>
         <div class="text">Habilidades</div>
-        <div class="text">Configuações</div>
+        <div class="text">Configurações</div>
+        <div class="modeswap">
+            <button class="icon-expand" onclick="myFunction()"><i class='bx bx-sun' ></i></button>
+            <button class="icon-contract" onclick="myFunction()"><i class='bx bx-moon' ></i></button>
+        </div>
     </div>
 
     <script>
@@ -101,6 +105,11 @@
         searchBtn.onclick = function() {
             sidebar.classList.toggle("active");
         };
+        
+        function myFunction() {
+            var element = document.body;
+            element.classList.toggle("dark-mode");
+        }
     </script>
 
 </body>
